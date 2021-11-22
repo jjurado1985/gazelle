@@ -33,7 +33,7 @@ public class ClienteService {
 
     //Método para buscar por username
     public ClienteModel buscarNick(String nick) {
-        return this.clienteRepository.findByNick(nick).orElse(new ClienteModel());
+        return this.clienteRepository.findByNick(nick.toLowerCase()).orElse(new ClienteModel());
     }
 
 }
