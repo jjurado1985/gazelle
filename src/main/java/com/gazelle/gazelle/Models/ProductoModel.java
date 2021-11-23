@@ -10,6 +10,7 @@ public class ProductoModel {
     private String id;
     private String nombreProducto;
     private int precio;
+   
     
 
     public String getId() {
